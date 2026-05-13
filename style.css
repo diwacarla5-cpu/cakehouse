@@ -1,0 +1,201 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#fff7f5;
+  color:#3b2f2f;
+  scroll-behavior:smooth;
+  line-height:1.6;
+}
+
+/* HERO */
+header{
+  height:100vh;
+
+  background:
+  linear-gradient(rgba(60,30,30,0.45), rgba(60,30,30,0.45)),
+  url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+/* HERO CONTENT */
+.hero{
+  animation:fadeIn 1.5s ease;
+  max-width:800px;
+}
+
+/* LOGO */
+.logo{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #f9a8d4;
+  margin-bottom:15px;
+  background:white;
+  box-shadow:0 0 25px rgba(249,168,212,0.5);
+}
+
+/* TITLE */
+.hero h1{
+  font-size:60px;
+  color:white;
+}
+
+.hero p{
+  color:#ffe4e6;
+  margin:12px 0 20px;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  padding:12px 28px;
+  background:#ec4899;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  transition:0.3s ease;
+  display:inline-block;
+  font-weight:500;
+}
+
+.btn:hover{
+  background:#db2777;
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+h2{
+  font-size:40px;
+  margin-bottom:20px;
+  color:#be185d;
+}
+
+/* ABOUT */
+.about{
+  max-width:650px;
+  margin:auto;
+  color:#5b4b4b;
+  font-size:16px;
+  line-height:1.8;
+}
+
+/* MENU GRID */
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:28px;
+  margin-top:45px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:14px 0 5px;
+  color:#db2777;
+  font-size:20px;
+}
+
+.card p{
+  font-size:14px;
+  color:#6b4f4f;
+  padding:0 12px;
+}
+
+/* PRICE */
+.price{
+  display:inline-block;
+  margin:15px 0 20px;
+  padding:7px 16px;
+  background:#f9a8d4;
+  color:#831843;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* CONTACT */
+.contact-box{
+  margin:auto;
+  max-width:520px;
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  line-height:2;
+  color:#5b4b4b;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  text-align:center;
+  background:#831843;
+  color:#ffe4e6;
+  font-size:14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  h2{
+    font-size:28px;
+  }
+
+  .btn{
+    padding:10px 22px;
+    font-size:14px;
+  }
+
+}
